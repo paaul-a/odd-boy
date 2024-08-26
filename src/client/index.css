@@ -1,0 +1,219 @@
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+.nav-pages {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 70px; /* Adjust the left position as needed */
+  top:50px;
+  transform: translateY(-50%);
+
+}
+
+.nav-link {
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+  border-bottom: 0.5px solid rgba(245, 245, 245, 0.691);
+  overflow: hidden; /* Hide text initially */
+  margin-right: 10px; /* Add spacing between links */
+
+  width: 85%; /* Adjust the width of the border-top */
+
+}
+
+.nav-link span {
+  display: block;
+  transition: transform 0.5s ease;
+  transform: translateY(100%); /* Move text below the border */
+  font-size: 15px;
+}
+
+.nav-link:hover span {
+  transform: translateY(0); /* Move text above the border when hovered */
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0) rotate(180deg);
+  writing-mode: vertical-rl;
+  margin-top: 20px;
+}
+
+/* Set position relative to the body */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 0.2px;
+  height: 100vh;
+  background-color: rgba(245, 245, 245, 0.302);
+  
+}
+
+.title p {
+  color: whitesmoke;
+  margin: 10px;
+  font-size: 27px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.job-des {
+  position: absolute;
+  bottom: 30px;
+  left: 5px;
+  transform: translate(0, 0) rotate(180deg);
+  writing-mode: vertical-rl;
+  margin-top: 20px;
+  color: rgba(245, 245, 245, 0.598);
+  cursor:default;
+}
+
+.image-stack {
+  position: relative;
+  width: 300px; /* Adjust the width of the stack */
+  height: 200px; /* Adjust the height of the stack */
+  margin-top: 30px;
+  margin-left: 140px;
+}
+
+.image-container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: transform 0.5s ease; /* Add transition for transform */
+  width: 100%; 
+  height: 430px; /* Set a fixed height for the image containers */
+  cursor: pointer;
+}
+.image-container img {
+  display: block;
+  width: 100%; /* Set the width to fill the container */
+  height: 100%; /* Set the height to fill the container */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* .image-container:nth-child(n+2) img {
+  transition: transform 0.5s ease; 
+}
+
+.image-container:nth-child(n+2):hover img {
+  transform: scale(0.8); 
+} */
+
+
+
+
+
+/* 
+===================================================================
+ABOUT PAGE
+===================================================================
+*/
+
+.about-text {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 480px;
+  padding: 40px;
+}
+
+.about-title p{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.about-des {
+  font-weight: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
