@@ -5,6 +5,7 @@ import { Link, Route, Routes, useNavigate } from "react-router-dom";
 
 import Home from "./components/Home";
 import About from "./components/About";
+import Motion from "./components/Motion";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,6 +45,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<About/>}/>
+      <Route path="/motion" element={<Motion/>}/>
 
     </Routes>
     </>

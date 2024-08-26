@@ -24,6 +24,8 @@
   left: 70px; /* Adjust the left position as needed */
   top:50px;
   transform: translateY(-50%);
+  cursor: pointer;
+
 
 }
 
@@ -34,7 +36,6 @@
   border-bottom: 0.5px solid black;
   overflow: hidden; /* Hide text initially */
   margin-right: 10px; /* Add spacing between links */
-
   width: 85%; /* Adjust the width of the border-top */
 
 }
@@ -134,8 +135,8 @@ ABOUT PAGE
 ===================================================================
 */
 
-.about-text {
-  /* border: 1px solid white; */
+/* .about-text {
+  border: 1px solid white; 
   display: flex;
   flex-direction: column;
   margin-left: 480px;
@@ -150,6 +151,103 @@ ABOUT PAGE
 
 .about-des {
   font-weight: 18px;
+} */
+
+.about-text {
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+  padding: 30px;
+  padding-right: 30px;
+
+  color: black;
+  /* border: 1px solid white; */
+  text-align: end;
+
+
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+
+  &:view-transition {
+    transition: 1s;
+  }
+
+}
+
+/* .about-text {
+  display: flex;
+  flex-direction: row;
+
+  
+} */
+
+.about-text.visible {
+  opacity: 1;
+}
+
+.headshot {
+  padding-left: 130px;
+}
+
+.about-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20%;
+  padding-right: 10px;
+  text-align: start;
+  /* border: 1px solid white;  */
+}
+
+.about-details h3 {
+  font-weight: lighter;
+  font-size: x-large;
+  margin-top: 0px;
+}
+
+.about details p {
+  color: black;
+  text-decoration: none;
+  padding-bottom: 0px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: #606060
+  }
+}
+
+.contact-link {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-link:hover {
+  color: #606060; /* Change color on hover */
+}
+
+
+
+
+
+
+/* 
+===================================================================
+MOTION
+===================================================================
+*/
+
+.video-wrapper {
+  padding-left: 170px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.video-wrapper p {
+  margin-top: 0px;
+  color: black;
 }
 
 
