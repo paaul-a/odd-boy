@@ -21,8 +21,8 @@ function About() {
           src={myPhoto}
           alt="Headshot of Mason"
           className='headshot'
-          width="300" // optional, adjust as needed
-          height="100%" // optional, adjust as needed
+          width="300" 
+          height="100%" 
         />
 
         <div className='about-details'>
@@ -31,7 +31,7 @@ function About() {
             Atlanta working in editorial, fashion, music and creative industries.
           </h3>
           <p className='contact'>
-            <a href="mailto:paaula.mason@gmail.com" className="contact-link">
+            <a href="mailto:mason@odd-boy.com" className="contact-link">
               contact
             </a>
           </p>

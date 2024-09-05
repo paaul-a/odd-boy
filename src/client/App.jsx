@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <div className="nav">
         <div className="title">
-          <p onClick={handleNav}>ODD BOY</p>
+          <p onClick={handleNav}>ODD / BOY</p>
         </div>
 
         <div className="nav-pages">

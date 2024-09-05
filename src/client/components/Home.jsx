@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 import top from "../../../images/Bellamy/0026_26A.jpg";
-import middle from "../../../images/Bellamy/EF3A3926.jpg";
+import middle from "../../../images/Bellamy/EF3A3926 copy.jpg";
 import bottom from "../../../images/Bellamy/EF3A3709.jpg";
 
 import top2 from "../../../images/tavo/ef3a0569 copy.jpg";
@@ -76,31 +76,26 @@ function Home() {
   //     });
   //   };
   // }, []);
-
   return (
     <>
       <div className="image-flexbox">
-        <div className="image-stack">
-          <div className="image-container bottom-image">
-            <img src={bottom} alt="Bellamy1" />
-          </div>
-          <div className="image-container">
-            <img src={top} alt="Bellamy3" />
-          </div>
-          <div className="image-container">
-            <img src={middle} alt="Bellamy2" />
-          </div>
+        <div className="image-container">
+          <img src={bottom} alt="Bellamy1" />
         </div>
-        <div className="image-stack">
-          <div className="image-container bottom-image">
-            <img src={bottom2} alt="Tavo1" />
-          </div>
-          <div className="image-container">
-            <img src={middle2} alt="Tavo2" />
-          </div>
-          <div className="image-container">
-            <img src={top2} alt="Tavo3" />
-          </div>
+        <div className="image-container">
+          <img src={top} alt="Bellamy3" />
+        </div>
+        <div className="image-container">
+          <img src={middle} alt="Bellamy2" />
+        </div>
+        <div className="image-container">
+          <img src={bottom2} alt="Tavo1" />
+        </div>
+        <div className="image-container">
+          <img src={middle2} alt="Tavo2" />
+        </div>
+        <div className="image-container">
+          <img src={top2} alt="Tavo3" />
         </div>
       </div>
     </>

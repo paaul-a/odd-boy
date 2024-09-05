@@ -94,42 +94,21 @@ body::after {
 }
 .image-flexbox {
   display: flex;
-  justify-content: flex-start; /* Align stacks to the start (left) */
-  align-items: flex-start; /* Align the image stacks to the top */
-  flex-wrap: nowrap; /* Prevent wrapping to keep the stacks in one line */
-  gap: 20%; /* Remove the gap between the image stacks */
-  margin: 40px;
-  margin-left: 140px;
-}
-
-.image-stack {
-  position: relative;
-  width: 300px; /* Adjust the width of the stack */
-  height: 430px; /* Adjust the height of the stack */
-  margin-right: -80px; /* Adjust negative margin to bring stacks closer together */
-  z-index: 1; /* Default z-index */
-}
-
-.image-stack:hover {
-  z-index: 2; /* Bring the hovered stack to the front */
+  flex-wrap: wrap; /* To allow wrapping of images if there are many */
+  gap: 10px; /* Space between images */
 }
 
 .image-container {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transition: transform 0.5s ease; /* Add transition for transform */
-  width: 100%; 
-  height: 100%; /* Set a fixed height for the image containers */
-  cursor: pointer;
+  flex: 1; /* Make the images flexible */
+  min-width: 150px; /* Adjust based on the minimum size for the images */
+  max-width: 200px; /* Adjust based on how wide you want the images to go */
 }
 
-.image-container img {
-  display: block;
-  width: 100%; /* Set the width to fill the container */
-  height: 100%; /* Set the height to fill the container */
-  object-fit: cover; /* Ensure the image covers the container */
+img {
+  width: 100%; /* Ensure images fill their container */
+  height: auto; /* Maintain aspect ratio */
 }
+
 
 
 /* .image-container:nth-child(n+2) img {
